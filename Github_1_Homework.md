@@ -24,10 +24,16 @@ JSON
  10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
 
 > cat > new.json
->Sergeeva
->Victoria
->I have one cat
->I would like to have 2500$ salary.
+>{
+>   "personal_data":[
+>      {
+>         "name":"Victoria",
+>         "surname":"Sergeeva",
+>         "number_of_animals":"one",
+>         "desired_salary":2500
+>      }
+>   ]
+>}
 
  11. Отправить изменения на внешний репозиторий.
 >git add
@@ -41,19 +47,24 @@ JSON
 
  13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
 
-> cat > new.json
->My favorite film is Destruction
->My favorite TV series is The Office
->My favorite food is Meat
->My favorite time of the year is spring
->I would like to travel to Sweden
+> cat > preferences.json
+>{
+>   "hobbies":[
+>      {
+>         "film":"Destruction",
+>         "TV_series":"The Office",
+>         "Food":"Meat",
+>         "time of the year":"spring",
+>         "Travel":"Sweden"
+>      }
+>   ]
+>}
 
  14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
 
 >touch sklls.json
 >cat >skills.json
->Что такое JSON, XML. Их структура.
->Тестирование API через Postman (JS, автотесты API).
+>{"skills":"SQL, Postman, Git, Terminal, XCode, Dev Tools"}
 
 15. Отправить сразу 2 файла на внешний репозиторий.
 >git add .
@@ -133,12 +144,12 @@ XML
 Нажимаем Esc,после нажимаем сочитание клавиш Shift+: ,а пеосле сохраняем файл сочетанием клавиш wq и жмем Enter
 
  31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+
 >touch sklls.xml
 >cat > sklls.xml
-> Что такое JSON, XML. Их структура.
-> Тестирование API через Postman (JS, автотесты API).
-> Снятие и чтение логов c внешнего сервера.
->Снифинг http web трафика через Charles и Fiddler.
+><info>
+>	<skills>SQL, Postman, Git, Terminal, XCode, Dev Tools</skills>
+></info>
 
 
 32. Сделать коммит в одну строку.
@@ -155,10 +166,6 @@ XML
  37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
  38. Синхронизировать внешний и локальный репозиторий XML
 >git pull
-
-
-
-
 
 
 
@@ -231,5 +238,4 @@ TXT
  17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
  18. Синхронизировать внешний и локальный репозиторий TXT
 >git pull
-
 
