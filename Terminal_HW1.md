@@ -52,7 +52,7 @@
     
 
 >    file contens:
->>    mkdir shops
+>    mkdir shops
 >    cd shops
 >    mkdir milk butter  bread
 >    cd bread
