@@ -50,8 +50,9 @@
 
 2. Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
     
-
->    file contens:
+<html>
+  <head>
+      >    file contens:
 >    mkdir shops
 >    cd shops
 >    mkdir milk butter  bread
@@ -64,3 +65,6 @@
 >    ls -la
 >    cd cookie
 >    ls -la
+  </head>
+</html>
+
